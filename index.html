@@ -125,6 +125,20 @@
     input[type="submit"]:hover {
         background-color: #0056b3;
     }
+    .base1{
+      margin:30px 50px;
+       text-decoration: none;
+       color: white;
+    }
+    .base1 a{
+      font-size: x-large;
+       margin:50px  50px;
+       text-decoration: none;
+  
+    }
+    button{
+            color: rgb(45, 154, 222);
+        }
   </style>
 </head>
 
@@ -166,7 +180,7 @@
   </div>
   <div id="about" style="display: none;">
     <div style="display: flex;align-items: center;flex-direction: column;">
-       <h2>Faculties @ YMIM</h2>
+       <h2> YMIM</h2>
 <div style="display: flex;justify-content: center;flex-direction: row;">
      <div style="margin: 20px 70px;">
         <img src="https://www.bvuniversity.edu.in/Uploads/faculty/2424frt_Dr.AjimShaikh.jpg"/>
@@ -179,16 +193,7 @@
       </div>
 
        </div>
-       <div  style="margin:20px 70px;">
-        <img src="https://www.bvuniversity.edu.in/Uploads/faculty/1550frt_Dr.Mrs.AmrutaRamdasSane.jpg" height="332px"/>
-        <div>
-          <h2>
-            Dr. Mrs. Amruta Ramdas Sane </h2>
-          <p>Assistant Professor 
-            ,
-            Ph.D., M.Phil, MMS, LL.B</p>
-      </div>
-       </div>
+      
       </div>
 
     </div>
@@ -224,36 +229,60 @@
 
     <div class="contactcontainer">
       <h2>Contact Us</h2>
-    <form action="#" method="post">
+    <form id="contactus" action="#" method="post">
       <div class="form-group">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" required>
       </div>
       <div class="form-group">
           <label for="email">Your Email</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" >
       </div>
       <div class="form-group">
           <label for="message">Your Message</label>
           <textarea id="message" name="message" rows="5" required></textarea>
       </div>
-      <input type="submit" value="Send Message">
-  </form>
+      
+       <button onclick="contactus()">Send Message</button>
+      </form>
+   </div>
+      <script>
+      function contactus()
+      {
+        alert("Message has been send");
+        document.getElementById("contactus").reset();
+        event.preventDefault();
+      }
+      </script>
+    
     </div>
   </div>
+</div>
+
   <div id="login" style="display: none;">
     <div class="contactcontainer">
       <h2>Login</h2>
       <form id="loginForm" action="#" method="post">
           <div class="form-group">
               <label for="username">Username</label>
-              <input type="text" id="username" name="username" required>
+              <input type="text" id="username" name="username">
           </div>
           <div class="form-group">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" required>
+              <input type="password" id="password" name="password" >
           </div>
-          <input type="submit" value="Login">
+          <div>
+           
+                   <button onclick="myFunction()">Login</button>
+            
+                  <script>
+                  function myFunction() {
+                    alert("Sucessfully Login");
+                    document.getElementById("loginForm").reset();
+                    event.preventDefault();
+                  }
+                  </script>
+                </div>
       </form>
       
   </div></div>
@@ -261,22 +290,19 @@
     <div style="display:flex;flex-direction:column">
 
       <div>
-        <div style="display: flex;flex-direction: row; justify-content: center;margin-bottom:15px;">
-          <div style="display: flex;flex-direction: column; margin:10px 10px;text-decoration: none;color: white;">
+        
+          <div class="base1">
             <a href="#" class="footerNav">Academics</a>
             <a href="#" class="footerNav">Happenings</a>
             <a href="#" class="footerNav">Campus Facilities</a>
             <a href="#" class="footerNav">Placement</a>
-          </div>
-          <div style="display: flex;flex-direction: column;margin:10px 10px">
             <a href="#" class="footerNav">Adminission</a>
             <a href="#" class="footerNav">Research</a>
-            <a href="#" class="footerNav">Programmes</a>
+            <a href="#" class="footerNav">Programms</a>
             <a href="#" class="footerNav">Contact Us</a>
-          </div>
         </div>
 
-        <div style="margin-bottom: 10px;">Follow Us</div>
+        <div style="margin-bottom: 10px;"><h1>Follow Us</h1></div>
         <div class="social-icons">
 
           <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer">
